@@ -55,7 +55,7 @@ def render_frame(A: float, B: float) -> np.ndarray:
     ooz = 1 / z
 
     # CENTRALIZA AQUI 🔥
-    xp = (width / 2 + K1 * ooz * x).astype(int)
+    xp = (width / 2 + K1 * ooz * x * 2).astype(int)
     yp = (height / 2 - K1 * ooz * y).astype(int)
 
     L1 = (((np.outer(cos_phi, cos_theta) * sin_B)
